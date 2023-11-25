@@ -1,4 +1,4 @@
-"use strict";
+import router from '@ohos:router';
 class Login extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1) {
         super(parent, __localStorage, elmtId);
@@ -30,7 +30,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Column.create();
-            Column.debugLine("pages/Login.ets(7:5)");
+            Column.debugLine("pages/Login.ets(8:5)");
             Column.width('100%');
             Column.height('100%');
             Column.justifyContent(FlexAlign.Center);
@@ -43,7 +43,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Row.create();
-            Row.debugLine("pages/Login.ets(8:7)");
+            Row.debugLine("pages/Login.ets(9:7)");
             if (!isInitialRender) {
                 Row.pop();
             }
@@ -51,8 +51,8 @@ class Login extends ViewPU {
         });
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
-            Image.create({ "id": 16777217, "type": 20000, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
-            Image.debugLine("pages/Login.ets(9:9)");
+            Image.create({ "id": 16777217, "type": 20000, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
+            Image.debugLine("pages/Login.ets(10:9)");
             Image.width(80);
             Image.height(80);
             if (!isInitialRender) {
@@ -63,7 +63,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Image.create('https://cn.vitejs.dev/logo.svg');
-            Image.debugLine("pages/Login.ets(14:9)");
+            Image.debugLine("pages/Login.ets(15:9)");
             Image.width(80);
             Image.height(80);
             Image.margin({ left: 20 });
@@ -76,7 +76,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Text.create(this.message);
-            Text.debugLine("pages/Login.ets(20:7)");
+            Text.debugLine("pages/Login.ets(21:7)");
             Text.fontColor(Color.Black);
             Text.fontSize(20);
             Text.fontWeight(FontWeight.Bold);
@@ -90,7 +90,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             TextInput.create({ placeholder: "请输入手机号" });
-            TextInput.debugLine("pages/Login.ets(26:7)");
+            TextInput.debugLine("pages/Login.ets(27:7)");
             TextInput.maxLength(11);
             TextInput.type(InputType.Number);
             TextInput.margin({ top: 20 });
@@ -110,7 +110,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             TextInput.create({ placeholder: "请输入密码" });
-            TextInput.debugLine("pages/Login.ets(39:7)");
+            TextInput.debugLine("pages/Login.ets(40:7)");
             TextInput.maxLength(20);
             TextInput.type(InputType.Password);
             TextInput.margin({ top: 20 });
@@ -130,7 +130,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Row.create();
-            Row.debugLine("pages/Login.ets(51:7)");
+            Row.debugLine("pages/Login.ets(52:7)");
             Row.margin({ top: 10 });
             Row.width("100%");
             Row.justifyContent(FlexAlign.SpaceBetween);
@@ -143,7 +143,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Text.create("短信验证码登陆");
-            Text.debugLine("pages/Login.ets(52:9)");
+            Text.debugLine("pages/Login.ets(53:9)");
             Text.fontSize(14);
             Text.fontColor(Color.Blue);
             if (!isInitialRender) {
@@ -155,7 +155,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Text.create('忘记密码');
-            Text.debugLine("pages/Login.ets(55:9)");
+            Text.debugLine("pages/Login.ets(56:9)");
             Text.fontSize(14);
             Text.fontColor(Color.Blue);
             if (!isInitialRender) {
@@ -168,11 +168,14 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Button.createWithLabel('登陆', { type: ButtonType.Capsule });
-            Button.debugLine("pages/Login.ets(65:7)");
+            Button.debugLine("pages/Login.ets(66:7)");
             Button.width(160);
             Button.margin({ top: 20 });
             Button.onClick(() => {
                 console.log("button:登陆");
+                router.pushUrl({
+                    url: 'pages/ToDoList'
+                });
             });
             if (!isInitialRender) {
                 Button.pop();
@@ -183,7 +186,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Text.create('注册账号');
-            Text.debugLine("pages/Login.ets(71:7)");
+            Text.debugLine("pages/Login.ets(75:7)");
             Text.margin({ top: 20 });
             Text.fontSize(14);
             Text.fontColor(Color.Grey);
@@ -199,7 +202,7 @@ class Login extends ViewPU {
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             LoadingProgress.create();
-            LoadingProgress.debugLine("pages/Login.ets(78:7)");
+            LoadingProgress.debugLine("pages/Login.ets(82:7)");
             LoadingProgress.color(Color.Blue);
             LoadingProgress.height(60);
             LoadingProgress.width(60);

@@ -1,10 +1,10 @@
-import { FontSize, TitleBarStyle, WEIGHT } from '@bundle:com.example.rankdemo/entry/ets/common/constants/Constants';
+import { FontSize, TitleBarStyle, WEIGHT } from '@bundle:io.fireChat.h5/entry/ets/common/constants/Constants';
 import router from '@ohos:router';
 export class TitleComponent extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1) {
         super(parent, __localStorage, elmtId);
         this.__isRefreshData = new SynchedPropertySimpleTwoWayPU(params.isRefreshData, this, "isRefreshData");
-        this.__title = new ObservedPropertyObjectPU({ "id": 16777239, "type": 10003, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" }, this, "title");
+        this.__title = new ObservedPropertyObjectPU({ "id": 16777239, "type": 10003, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" }, this, "title");
         this.setInitiallyProvidedValue(params);
     }
     setInitiallyProvidedValue(params) {
@@ -66,7 +66,7 @@ export class TitleComponent extends ViewPU {
         });
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
-            Image.create({ "id": 16777241, "type": 20000, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
+            Image.create({ "id": 16777241, "type": 20000, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
             Image.debugLine("view/TitleComponent.ets(28:9)");
             Image.height(TitleBarStyle.IMAGE_BACK_SIZE);
             Image.width(TitleBarStyle.IMAGE_BACK_SIZE);
@@ -107,7 +107,7 @@ export class TitleComponent extends ViewPU {
         });
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
-            Image.create({ "id": 16777219, "type": 20000, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
+            Image.create({ "id": 16777219, "type": 20000, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
             Image.debugLine("view/TitleComponent.ets(46:9)");
             Image.height(TitleBarStyle.IMAGE_LOADING_SIZE);
             Image.width(TitleBarStyle.IMAGE_LOADING_SIZE);

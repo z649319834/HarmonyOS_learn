@@ -13,11 +13,11 @@
  * limitations under the License.
  */
 import prompt from '@ohos:promptAction';
-import { RankViewModel } from '@bundle:com.example.rankdemo/entry/ets/viewmodel/RankViewModel';
-import { ListHeaderComponent } from '@bundle:com.example.rankdemo/entry/ets/view/ListHeaderComponent';
-import { TitleComponent } from '@bundle:com.example.rankdemo/entry/ets/view/TitleComponent';
-import { ListItemComponent } from '@bundle:com.example.rankdemo/entry/ets/view/ListItemComponent';
-import { APP_EXIT_INTERVAL, Style, TIME, TITLE, WEIGHT } from '@bundle:com.example.rankdemo/entry/ets/common/constants/Constants';
+import { RankViewModel } from '@bundle:io.fireChat.h5/entry/ets/viewmodel/RankViewModel';
+import { ListHeaderComponent } from '@bundle:io.fireChat.h5/entry/ets/view/ListHeaderComponent';
+import { TitleComponent } from '@bundle:io.fireChat.h5/entry/ets/view/TitleComponent';
+import { ListItemComponent } from '@bundle:io.fireChat.h5/entry/ets/view/ListItemComponent';
+import { APP_EXIT_INTERVAL, Style, TIME, TITLE, WEIGHT } from '@bundle:io.fireChat.h5/entry/ets/common/constants/Constants';
 import router from '@ohos:router';
 let rankModel = new RankViewModel();
 class RankPage extends ViewPU {
@@ -96,7 +96,7 @@ class RankPage extends ViewPU {
     onBackPress() {
         if (this.isShowToast()) {
             prompt.showToast({
-                message: { "id": 16777237, "type": 10003, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" },
+                message: { "id": 16777237, "type": 10003, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" },
                 duration: TIME
             });
             this.clickBackTimeRecord = new Date().getTime();
@@ -112,7 +112,7 @@ class RankPage extends ViewPU {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
             Column.create();
             Column.debugLine("pages/RankPage.ets(66:5)");
-            Column.backgroundColor({ "id": 16777242, "type": 10001, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
+            Column.backgroundColor({ "id": 16777242, "type": 10001, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
             Column.height(WEIGHT);
             Column.width(WEIGHT);
             if (!isInitialRender) {

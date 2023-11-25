@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { FontSize, ListHeaderStyle } from '@bundle:com.example.rankdemo/entry/ets/common/constants/Constants';
+import { FontSize, ListHeaderStyle } from '@bundle:io.fireChat.h5/entry/ets/common/constants/Constants';
 export class ListHeaderComponent extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1) {
         super(parent, __localStorage, elmtId);
@@ -50,12 +50,12 @@ export class ListHeaderComponent extends ViewPU {
         });
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
-            Text.create({ "id": 16777234, "type": 10003, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
+            Text.create({ "id": 16777234, "type": 10003, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
             Text.debugLine("view/ListHeaderComponent.ets(25:7)");
             Text.fontSize(FontSize.SMALL);
             Text.width(ListHeaderStyle.LAYOUT_WEIGHT_LEFT);
             Text.fontWeight(ListHeaderStyle.FONT_WEIGHT);
-            Text.fontColor({ "id": 16777244, "type": 10001, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777244, "type": 10001, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
             if (!isInitialRender) {
                 Text.pop();
             }
@@ -64,12 +64,12 @@ export class ListHeaderComponent extends ViewPU {
         Text.pop();
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
-            Text.create({ "id": 16777235, "type": 10003, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
+            Text.create({ "id": 16777235, "type": 10003, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
             Text.debugLine("view/ListHeaderComponent.ets(30:7)");
             Text.fontSize(FontSize.SMALL);
             Text.width(ListHeaderStyle.LAYOUT_WEIGHT_CENTER);
             Text.fontWeight(ListHeaderStyle.FONT_WEIGHT);
-            Text.fontColor({ "id": 16777244, "type": 10001, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777244, "type": 10001, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
             if (!isInitialRender) {
                 Text.pop();
             }
@@ -78,12 +78,12 @@ export class ListHeaderComponent extends ViewPU {
         Text.pop();
         this.observeComponentCreation((elmtId, isInitialRender) => {
             ViewStackProcessor.StartGetAccessRecordingFor(elmtId);
-            Text.create({ "id": 16777236, "type": 10003, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
+            Text.create({ "id": 16777236, "type": 10003, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
             Text.debugLine("view/ListHeaderComponent.ets(35:7)");
             Text.fontSize(FontSize.SMALL);
             Text.width(ListHeaderStyle.LAYOUT_WEIGHT_RIGHT);
             Text.fontWeight(ListHeaderStyle.FONT_WEIGHT);
-            Text.fontColor({ "id": 16777244, "type": 10001, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
+            Text.fontColor({ "id": 16777244, "type": 10001, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
             if (!isInitialRender) {
                 Text.pop();
             }

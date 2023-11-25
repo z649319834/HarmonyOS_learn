@@ -1,4 +1,4 @@
-import { rankData1, rankData2 } from '@bundle:com.example.rankdemo/entry/ets/model/DataModel';
+import { rankData1, rankData2 } from '@bundle:io.fireChat.h5/entry/ets/model/DataModel';
 export class RankViewModel {
     // Load data from the rankData1 of the Mock file.
     loadRankDataSource1() {

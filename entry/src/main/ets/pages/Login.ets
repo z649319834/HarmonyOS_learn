@@ -1,3 +1,4 @@
+import router from '@ohos.router';
 @Entry
 @Component
 struct Login {
@@ -67,6 +68,9 @@ struct Login {
         .margin({top:20})
         .onClick(()=>{
           console.log("button:登陆")
+          router.pushUrl({
+            url:'pages/ToDoList'
+          })
         })
       Text('注册账号')
         .margin({top:20})

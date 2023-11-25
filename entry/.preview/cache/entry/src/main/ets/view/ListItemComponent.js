@@ -12,7 +12,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { FontSize, FontWeight, ItemStyle, WEIGHT } from '@bundle:com.example.rankdemo/entry/ets/common/constants/Constants';
+import { FontSize, FontWeight, ItemStyle, WEIGHT } from '@bundle:io.fireChat.h5/entry/ets/common/constants/Constants';
 export class ListItemComponent extends ViewPU {
     constructor(parent, params, __localStorage, elmtId = -1) {
         super(parent, __localStorage, elmtId);
@@ -197,7 +197,7 @@ export class ListItemComponent extends ViewPU {
             Row.borderRadius(ItemStyle.CIRCLE_TEXT_BORDER_RADIUS);
             Row.size({ width: ItemStyle.CIRCLE_TEXT_SIZE,
                 height: ItemStyle.CIRCLE_TEXT_SIZE });
-            Row.backgroundColor({ "id": 16777243, "type": 10001, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" });
+            Row.backgroundColor({ "id": 16777243, "type": 10001, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" });
             if (!isInitialRender) {
                 Row.pop();
             }

@@ -1,7 +1,10 @@
 {
   "src": [
-    "pages/RankPage",
+    "pages/Login",
     "pages/Home",
-    "pages/Login"
+    "pages/RankPage",
+    "pages/LayoutFlex",
+    "pages/ToDoList",
+    "pages/LayoutGrid"
   ]
 }

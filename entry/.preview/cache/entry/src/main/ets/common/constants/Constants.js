@@ -50,7 +50,7 @@ export const TAG = 'RankPage';
 /**
  * The title of TitleComponent.
  */
-export const TITLE = { "id": 16777238, "type": 10003, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" };
+export const TITLE = { "id": 16777238, "type": 10003, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" };
 class style {
     constructor() {
         this.RANK_PADDING = 15;
@@ -136,8 +136,8 @@ class itemStyle {
         this.LAYOUT_WEIGHT_CENTER = '50%';
         this.LAYOUT_WEIGHT_RIGHT = '20%';
         this.BORDER_WIDTH = 1;
-        this.COLOR_BLUE = { "id": 16777245, "type": 10001, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" };
-        this.COLOR_BLACK = { "id": 16777246, "type": 10001, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" };
+        this.COLOR_BLUE = { "id": 16777245, "type": 10001, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" };
+        this.COLOR_BLACK = { "id": 16777246, "type": 10001, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" };
     }
 }
 /**
@@ -187,11 +187,11 @@ export const ItemStyle = {
     /**
      * The blue color of item.
      */
-    COLOR_BLUE: { "id": 16777245, "type": 10001, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" },
+    COLOR_BLUE: { "id": 16777245, "type": 10001, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" },
     /**
      * The black color of item.
      */
-    COLOR_BLACK: { "id": 16777246, "type": 10001, params: [], "bundleName": "com.example.rankdemo", "moduleName": "entry" }
+    COLOR_BLACK: { "id": 16777246, "type": 10001, params: [], "bundleName": "io.fireChat.h5", "moduleName": "entry" }
 };
 class titleBarStyle {
     constructor() {

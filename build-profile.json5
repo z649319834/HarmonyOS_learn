@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/zcz/.ohos/config/auto_debug_HelloHuawei_io.fireChat.h5_260086000308182964.cer",
+          "storePassword": "0000001BABB9DAD11D6D26AB95FC4A7C61FC43C09BBE76D1B5195DB1C8B7F90B627A408D05F72650CA01B3",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B38E2E93FF3FECCA77D8F37C9111DB3BCB2AB3A7554C939E71E20E90849C59FC1B75C4CEB8D6B5F",
+          "profile": "/Users/zcz/.ohos/config/auto_debug_HelloHuawei_io.fireChat.h5_260086000308182964.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/zcz/.ohos/config/auto_debug_HelloHuawei_io.fireChat.h5_260086000308182964.p12"
+        }
+      }
+    ],
     "compileSdkVersion": 9,
     "compatibleSdkVersion": 9,
     "products": [
